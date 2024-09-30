@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Spirax&display=swap');
+
+/* 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+
+
+
+/* .hero-container {
+  width: 100%;
+  height: 100vh; 
+  background-image: url(../assets/her.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* .circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: red;
+  position: absolute;
+  bottom: 0;
+} */
+
+.bg-gradient-radial {
+  background: rgba(0, 0, 0, 0.89);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-gradient-radialz {
+  background: rgba(0, 0, 0, 0.80);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-gradient-radials {
+  box-shadow: -4px 8px 64px 200px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: -4px 8px 64px 127px rgb(0, 0, 0) inset;
+  -moz-box-shadow: -4px 8px 64px 107px rgba(0, 0, 0, 1) inset;
+  /* background: radial-gradient(at 40% 50%, transparent, rgba(0, 0, 0, 0.8)); */
+  width: 100%;
+  height: 100%;
+}
+
+
+.bg-gradient-lenier {
+  background: linear-gradient(to top, rgba(2, 98, 215, 1), 15%, transparent);
+  width: 100%;
+  height: 30%;
+}
+
+
+
+/* Menyembunyikan scrollbar pada elemen tertentu */
+::-webkit-scrollbar {
+  display: none;
+  /* Menghilangkan scrollbar */
+}
+
+/* Pastikan elemen dengan scroll tetap bisa scroll */
+.scrollable-element {
+  overflow: auto;
+  /* Atur overflow untuk memastikan elemen bisa scroll */
+}
+
+/* Sembunyikan scrollbar horizontal dan vertikal di seluruh halaman */
+html,
+body {
+  overflow: hidden;
+  /* Pastikan ini hanya digunakan jika perlu */
+  /* Jika hanya ingin menyembunyikan scrollbar, gunakan aturan berikut di bawah */
+  overflow-x: hidden;
+  /* Menyembunyikan scrollbar horizontal */
+  overflow-y: scroll;
+  /* Pastikan scroll vertikal tetap ada */
+}
